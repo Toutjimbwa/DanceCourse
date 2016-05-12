@@ -1,4 +1,4 @@
-package app15.dansapp;
+package com.aglie.tiqaanvi.dancecourse;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

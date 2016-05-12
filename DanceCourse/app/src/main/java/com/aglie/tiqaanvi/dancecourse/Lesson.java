@@ -1,4 +1,4 @@
-package app15.dansapp;
+package com.aglie.tiqaanvi.dancecourse;
 
 /**
  * Created by umyhafzaqa on 2016-05-12.
