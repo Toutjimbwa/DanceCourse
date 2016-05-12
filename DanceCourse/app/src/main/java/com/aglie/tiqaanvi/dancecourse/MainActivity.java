@@ -1,16 +1,23 @@
-package com.aglie.tiqaanvi.dancecourse;
+package app15.dansapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    TextView tvCourses;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        tvCourses = (TextView)findViewById(R.id.tv_courses);
+
+        AsyncCourses asyncCourses = new AsyncCourses();
+        asyncCourses.execute("GET", "dansapp/getCourses.php");
     }
 
     @Override
